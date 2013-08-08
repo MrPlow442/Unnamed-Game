@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29949860-1EEC-4725-90F1-8EB5439BEB8B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CSFMLBox2DSpaceGame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programming\API%27s\SFML-2.1-32bits\include;D:\Programming\API%27s\Box2D 2.3.0 r254;D:\Programming\API%27s\Thor\include;D:\Programming\API%27s\SFGUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Programming\API%27s\SFML-2.1-32bits\lib;D:\Programming\API%27s\Box2D 2.3.0 r254\lib\Debug;D:\Programming\API%27s\Thor\lib;D:\Programming\API%27s\SFGUI\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-audio-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;Box2D_d.lib;thor-d.lib;sfgui-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programming\API%27s\SFML-2.1-32bits\include;D:\Programming\API%27s\Box2D 2.3.0 r254;D:\Programming\API%27s\Thor\include;D:\Programming\API%27s\SFGUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Programming\API%27s\SFML-2.1-32bits\lib;D:\Programming\API%27s\Box2D 2.3.0 r254\lib\Release;D:\Programming\API%27s\Thor\lib;D:\Programming\API%27s\SFGUI\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-audio.lib;sfml-window.lib;sfml-graphics.lib;Box2D.lib;thor.lib;sfgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Engine\Resource\FontManager.cpp" />
+    <ClCompile Include="src\Engine\GameEngine.cpp" />
+    <ClCompile Include="src\Engine\States\GameStateIngame.cpp" />
+    <ClCompile Include="src\Engine\States\GameStateIntro.cpp" />
+    <ClCompile Include="src\Engine\States\GameStateMenu.cpp" />
+    <ClCompile Include="src\Engine\Utils\Utils.cpp" />
+    <ClCompile Include="src\Engine\LoadingThread.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Engine\Debug\SFMLDebugDraw.cpp" />
+    <ClCompile Include="src\Engine\Resource\SoundManager.cpp" />
+    <ClCompile Include="src\Engine\States\StateManager.cpp" />
+    <ClCompile Include="src\Engine\Resource\TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Engine\Debug\dbgmsg.h" />
+    <ClInclude Include="src\Engine\GameEngine.h" />
+    <ClInclude Include="src\Engine\LoadingThread.h" />
+    <ClInclude Include="src\Engine\Resource\SoundManager.h" />
+    <ClInclude Include="src\Engine\Resource\FontManager.h" />
+    <ClInclude Include="src\Engine\States\GameState.h" />
+    <ClInclude Include="src\Engine\States\GameStateIngame.h" />
+    <ClInclude Include="src\Engine\States\GameStateIntro.h" />
+    <ClInclude Include="src\Engine\States\GameStateMenu.h" />
+    <ClInclude Include="src\Engine\Utils\Utils.h" />
+    <ClInclude Include="src\Engine\Resource\ResourceManager.h" />
+    <ClInclude Include="src\Engine\Debug\SFMLDebugDraw.h" />
+    <ClInclude Include="src\Engine\States\StateManager.h" />
+    <ClInclude Include="src\Engine\Resource\TextureManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\LeagueGothic-Regular.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\box2d.png" />
+    <Image Include="res\nebulaTest.png" />
+    <Image Include="res\planet1.png" />
+    <Image Include="res\planet2.png" />
+    <Image Include="res\SFML2.png" />
+    <Image Include="res\stars.jpg" />
+    <Image Include="res\stars2.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

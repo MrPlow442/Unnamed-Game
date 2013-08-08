@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{473a9706-3be1-491f-ad65-2de9536d210b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Debug">
+      <UniqueIdentifier>{902f9f4c-be20-4653-9098-7c21fd2ceeba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\States">
+      <UniqueIdentifier>{f27b3fc0-5d2a-4f90-8503-6c0fe13b9257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{69db895f-ca68-40ad-893c-f846be25c706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Debug">
+      <UniqueIdentifier>{437fb256-d0d7-46f6-924c-885e8c1b7890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\States">
+      <UniqueIdentifier>{f50b4603-e778-4264-9dd7-6a4be7edd5a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Resource">
+      <UniqueIdentifier>{b9e890a1-b7c5-4bd8-af18-b919a5ff5f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Resource">
+      <UniqueIdentifier>{4e592a14-8e6d-4144-baab-2b9036110164}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Engine\GameEngine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\LoadingThread.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Resource\FontManager.cpp">
+      <Filter>Source Files\Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\States\GameStateIngame.cpp">
+      <Filter>Source Files\Engine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\States\GameStateIntro.cpp">
+      <Filter>Source Files\Engine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\States\GameStateMenu.cpp">
+      <Filter>Source Files\Engine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Resource\SoundManager.cpp">
+      <Filter>Source Files\Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\States\StateManager.cpp">
+      <Filter>Source Files\Engine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Resource\TextureManager.cpp">
+      <Filter>Source Files\Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Debug\SFMLDebugDraw.cpp">
+      <Filter>Source Files\Engine\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Utils\Utils.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Engine\GameEngine.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\LoadingThread.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Debug\dbgmsg.h">
+      <Filter>Header Files\Engine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Resource\FontManager.h">
+      <Filter>Header Files\Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\States\GameState.h">
+      <Filter>Header Files\Engine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\States\GameStateIngame.h">
+      <Filter>Header Files\Engine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\States\GameStateIntro.h">
+      <Filter>Header Files\Engine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\States\GameStateMenu.h">
+      <Filter>Header Files\Engine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Resource\ResourceManager.h">
+      <Filter>Header Files\Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Resource\SoundManager.h">
+      <Filter>Header Files\Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\States\StateManager.h">
+      <Filter>Header Files\Engine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Resource\TextureManager.h">
+      <Filter>Header Files\Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Debug\SFMLDebugDraw.h">
+      <Filter>Header Files\Engine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Utils\Utils.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\nebulaTest.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\stars.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\box2d.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SFML2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\stars2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\planet2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\planet1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\LeagueGothic-Regular.otf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
