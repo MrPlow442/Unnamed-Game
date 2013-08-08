@@ -5,7 +5,7 @@
 //Resource Managers
 #include "..\Resource\FontManager.h"
 //Debug
-#include "..\Debug\dbgmsg.h"
+#include "..\DBG\dbgmsg.h"
 
 GameStateMenu::GameStateMenu(StateManager& manager) : 
 	GameState(manager), 

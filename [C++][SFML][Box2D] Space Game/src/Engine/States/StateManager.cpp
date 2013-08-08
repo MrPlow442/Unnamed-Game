@@ -1,6 +1,6 @@
 #include "StateManager.h"
 #include "GameState.h"
-#include "..\Debug\dbgmsg.h"
+#include "..\DBG\dbgmsg.h"
 
 StateManager::StateManager(sf::RenderWindow &window) : m_window(window)
 {}

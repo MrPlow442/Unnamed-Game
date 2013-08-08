@@ -66,14 +66,14 @@
     <ClCompile Include="src\Engine\Resource\TextureManager.cpp">
       <Filter>Source Files\Engine\Resource</Filter>
     </ClCompile>
-    <ClCompile Include="src\Engine\Debug\SFMLDebugDraw.cpp">
-      <Filter>Source Files\Engine\Debug</Filter>
-    </ClCompile>
     <ClCompile Include="src\Engine\Utils\Utils.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\DBG\SFMLDebugDraw.cpp">
+      <Filter>Source Files\Engine\Debug</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,9 +82,6 @@
     </ClInclude>
     <ClInclude Include="src\Engine\LoadingThread.h">
       <Filter>Header Files\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Engine\Debug\dbgmsg.h">
-      <Filter>Header Files\Engine\Debug</Filter>
     </ClInclude>
     <ClInclude Include="src\Engine\Resource\FontManager.h">
       <Filter>Header Files\Engine\Resource</Filter>
@@ -113,11 +110,14 @@
     <ClInclude Include="src\Engine\Resource\TextureManager.h">
       <Filter>Header Files\Engine\Resource</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\Debug\SFMLDebugDraw.h">
-      <Filter>Header Files\Engine\Debug</Filter>
-    </ClInclude>
     <ClInclude Include="src\Engine\Utils\Utils.h">
       <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\DBG\dbgmsg.h">
+      <Filter>Header Files\Engine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\DBG\SFMLDebugDraw.h">
+      <Filter>Header Files\Engine\Debug</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -147,5 +147,8 @@
     <Font Include="res\LeagueGothic-Regular.otf">
       <Filter>Resource Files</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Open Font License.markdown" />
   </ItemGroup>
 </Project>

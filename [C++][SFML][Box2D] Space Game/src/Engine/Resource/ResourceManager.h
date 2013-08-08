@@ -5,7 +5,7 @@
 #include <map>
 #include <memory>
 
-#include "..\Debug\dbgmsg.h"
+#include "..\DBG\dbgmsg.h"
 
 template<typename T>
 class ResourceManager

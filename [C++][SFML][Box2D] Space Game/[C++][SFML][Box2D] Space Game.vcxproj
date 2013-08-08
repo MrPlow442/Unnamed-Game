@@ -92,13 +92,13 @@
     <ClCompile Include="src\Engine\Utils\Utils.cpp" />
     <ClCompile Include="src\Engine\LoadingThread.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\Engine\Debug\SFMLDebugDraw.cpp" />
+    <ClCompile Include="src\Engine\DBG\SFMLDebugDraw.cpp" />
     <ClCompile Include="src\Engine\Resource\SoundManager.cpp" />
     <ClCompile Include="src\Engine\States\StateManager.cpp" />
     <ClCompile Include="src\Engine\Resource\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Engine\Debug\dbgmsg.h" />
+    <ClInclude Include="src\Engine\DBG\dbgmsg.h" />
     <ClInclude Include="src\Engine\GameEngine.h" />
     <ClInclude Include="src\Engine\LoadingThread.h" />
     <ClInclude Include="src\Engine\Resource\SoundManager.h" />
@@ -109,7 +109,7 @@
     <ClInclude Include="src\Engine\States\GameStateMenu.h" />
     <ClInclude Include="src\Engine\Utils\Utils.h" />
     <ClInclude Include="src\Engine\Resource\ResourceManager.h" />
-    <ClInclude Include="src\Engine\Debug\SFMLDebugDraw.h" />
+    <ClInclude Include="src\Engine\DBG\SFMLDebugDraw.h" />
     <ClInclude Include="src\Engine\States\StateManager.h" />
     <ClInclude Include="src\Engine\Resource\TextureManager.h" />
   </ItemGroup>
@@ -124,6 +124,9 @@
     <Image Include="res\SFML2.png" />
     <Image Include="res\stars.jpg" />
     <Image Include="res\stars2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Open Font License.markdown" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

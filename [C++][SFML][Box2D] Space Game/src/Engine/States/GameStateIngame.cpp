@@ -4,7 +4,7 @@
 //Resource Managers
 #include "..\Resource\TextureManager.h"
 //Debug
-#include "..\Debug\dbgmsg.h"
+#include "..\DBG\dbgmsg.h"
 //Loading
 #include "..\LoadingThread.h"
 //Standard libraries

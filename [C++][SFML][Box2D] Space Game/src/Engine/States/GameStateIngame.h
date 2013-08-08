@@ -7,7 +7,7 @@
 #include <Box2D\Box2D.h>
 
 #include "GameState.h"
-#include "..\Debug\SFMLDebugDraw.h"
+#include "..\DBG\SFMLDebugDraw.h"
 
 class GameStateIngame : public GameState
 {

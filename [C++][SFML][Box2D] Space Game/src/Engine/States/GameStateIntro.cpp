@@ -7,7 +7,7 @@
 //Utils
 #include "..\Utils\Utils.h"
 //Debug
-#include "..\Debug\dbgmsg.h"
+#include "..\DBG\dbgmsg.h"
 
 GameStateIntro::GameStateIntro(StateManager &manager) :
 	GameState(manager),

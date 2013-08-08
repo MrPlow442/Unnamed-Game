@@ -3,7 +3,7 @@
 //Resource Managers
 #include "Resource\FontManager.h"
 //Debug
-#include "Debug\dbgmsg.h"
+#include "DBG\dbgmsg.h"
 
 
 LoadingThread loadingThread;
